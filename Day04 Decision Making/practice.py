@@ -1,81 +1,251 @@
-print("======== User Input ========")
+# ==========================================
+# Day 04 - Decision Making
+# ==========================================
 
-name = input("Enter your name : ")
-print("Welcome", name)
+print("=" * 50)
+print("      Day 04 - Decision Making")
+print("=" * 50)
 
-city = input("Enter City :")
-print("city :", city)
+# ==========================================
+# Practice 1 - if Statement
+# ==========================================
 
-project = input("Enter project Name : ")
-shot = input("Enter shot Name : ")
+print()
+print("-" * 50)
+print("Practice 1 - if Statement")
+print("-" * 50)
 
-print("Project :", project)
-print("shot ", shot)
-
-
-print("======== Data Types ========")
-
-name ="Rajesh"
 width = 1920
-gamma = 2.2
-render_completed = True
 
-print(name)
-print(width)
-print(gamma)
-print(render_completed)
+if width == 1920:
+    print("Valid Resolution")
 
+width = 2048
 
-print("======== Type() ========")
+if width == 1920:
+    print("Render Started")
 
-name = "Rajesh"
+# ==========================================
+# Practice 2 - else Statement
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 2 - else Statement")
+print("-" * 50)
+
+width = 2048
+
+if width == 1920:
+    print("Render Started")
+else:
+    print("Render Stopped")
+
+print("Program Finished")
+
+# ==========================================
+# Practice 3 - else Statement
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 3 - else Statement")
+print("-" * 50)
+
+width = 2048
+
+if width == 1920:
+    print("Valid Resolution")
+else:
+    print("Invalid Resolution")
+
+render_status = False
+
+if render_status:
+    print("Rendering Started")
+else:
+    print("Rendering Failed")
+
+print("Pipeline Finished")
+
+# ==========================================
+# Practice 4 - elif Statement
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 4 - elif Statement")
+print("-" * 50)
+
+width = 2048
+
+if width == 1920:
+    print("Full HD")
+
+elif width == 2048:
+    print("2K")
+
+else:
+    print("Unknown Resolution")
+
+file_extension = ".exr"
+
+if file_extension == ".exr":
+    print("EXR File")
+
+elif file_extension == ".jpg":
+    print("JPEG File")
+
+elif file_extension == ".png":
+    print("PNG File")
+
+else:
+    print("Unsupported File")
+
+# ==========================================
+# Practice 5 - Multiple elif
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 5 - Multiple elif")
+print("-" * 50)
+
+width = 3840
+
+if width == 1920:
+    print("Full HD")
+
+elif width == 2048:
+    print("2K")
+
+elif width == 3840:
+    print("4K")
+
+else:
+    print("Invalid Resolution")
+
+# ==========================================
+# Practice 6 - Indentation
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 6 - Indentation")
+print("-" * 50)
+
 width = 1920
-gamma = 2.2
-render_completed = True
-shot = "SH020"
 
-print(type(name))
-print(type(width))
-print(type(gamma))
-print(type(render_completed))
-print(type(shot))
+if width == 1920:
+    print("Valid Resolution")
 
-print("======== Type Conversion Problem========")
+print("Program Finished")
 
-num1 = input("Frist Number")
-num2 = input("Second Number")
+if True:
+    print("Line 1")
+    print("Line 2")
 
-print("Result :", num1 + num2)
+print("Program Finished")
 
-num1 = int(input("Frist Number :"))
-num2 = int(input("Second Number :"))
+# ==========================================
+# Practice 7 - Nested if
+# ==========================================
 
-print("Result :", num1 + num2)
+print()
+print("-" * 50)
+print("Practice 7 - Nested if")
+print("-" * 50)
 
-print("======== Type Conversion ========")
+width = 1920
+height = 1080
 
-num1 = int(input("Frist Number :"))
-num2 = int(input("Second Number :"))
+if width == 1920:
 
-print("Addition :", num1 + num2)
+    if height == 1080:
+        print("Valid Resolution")
 
-print("======== Float Conversion ========")
+print("Pipeline Finished")
 
+# ==========================================
+# Practice 8 - and Operator
+# ==========================================
 
-#Program 1 - float()
+print()
+print("-" * 50)
+print("Practice 8 - and Operator")
+print("-" * 50)
 
-gamma = float(input("Enter Gamma :"))
+width = 1920
+height = 1080
 
-print("Gamma :", gamma)
-print(type(gamma))
+if width == 1920 and height == 1080:
+    print("Valid Resolution")
 
-# Program 2 - str()
+print("Pipeline Finished")
 
-print("======== String Conversion ========")
+# ==========================================
+# Practice 9 - and Operator (False Condition)
+# ==========================================
 
-version = 1
+print()
+print("-" * 50)
+print("Practice 9 - and Operator (False Condition)")
+print("-" * 50)
 
-version_text = str(version)
+width = 1920
+height = 720
 
-print(version_text)
-print(type(version_text))
+if width == 1920 and height == 1080:
+    print("Valid Resolution")
+
+print("Pipeline Finished")
+
+# ==========================================
+# Practice 10 - or Operator
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 10 - or Operator")
+print("-" * 50)
+
+width = 1920
+height = 720
+
+if width == 1920 or height == 1080:
+    print("Valid Resolution")
+
+print("Pipeline Finished")
+
+# ==========================================
+# Practice 11 - or Operator (False Condition)
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 11 - or Operator (False Condition)")
+print("-" * 50)
+
+width = 1280
+height = 720
+
+if width == 1920 or height == 1080:
+    print("Valid Resolution")
+
+print("Pipeline Finished")
+
+# ==========================================
+# Practice 12 - not Operator
+# ==========================================
+
+print()
+print("-" * 50)
+print("Practice 12 - not Operator")
+print("-" * 50)
+
+render_completed = False
+
+if not render_completed:
+    print("Render Pending")
+
+print("Pipeline Finished")

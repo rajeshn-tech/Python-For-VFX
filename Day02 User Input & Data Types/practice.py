@@ -1,77 +1,92 @@
-print("======== User Input ========")
+print("=" * 50)
+print("          Day 02 - Practice")
+print("=" * 50)
 
-name = input("Enter your name : ")
+print()
+
+# ----------------------------------------
+# Practice 1 - User Input
+# ----------------------------------------
+
+name = input("Enter Your Name : ")
+
 print("Welcome", name)
 
-city = input("Enter City :")
-print("city :", city)
+city = input("Enter City : ")
 
-project = input("Enter project Name : ")
-shot = input("Enter shot Name : ")
+print("City :", city)
 
-print("Project :", project)
-print("shot ", shot)
+project_name = input("Enter Project Name : ")
+shot_name = input("Enter Shot Name    : ")
 
+print("Project :", project_name)
+print("Shot    :", shot_name)
 
-print("======== Data Types ========")
+print()
 
-name ="Rajesh"
+# ----------------------------------------
+# Practice 2 - Data Types
+# ----------------------------------------
+
+artist_name = "Rajesh"
 width = 1920
 gamma = 2.2
 render_completed = True
 
-print(name)
+print(artist_name)
 print(width)
 print(gamma)
 print(render_completed)
 
+print()
 
-print("======== Type() ========")
+# ----------------------------------------
+# Practice 3 - type()
+# ----------------------------------------
 
-name = "Rajesh"
-width = 1920
-gamma = 2.2
-render_completed = True
-shot = "SH020"
-
-print(type(name))
+print(type(artist_name))
 print(type(width))
 print(type(gamma))
 print(type(render_completed))
-print(type(shot))
 
-print("======== Type Conversion Problem========")
+print()
 
-num1 = input("Frist Number")
-num2 = input("Second Number")
+# ----------------------------------------
+# Practice 4 - Type Conversion Problem
+# ----------------------------------------
 
-print("Result :", num1 + num2)
-
-num1 = int(input("Frist Number :"))
-num2 = int(input("Second Number :"))
+num1 = input("Enter First Number  : ")
+num2 = input("Enter Second Number : ")
 
 print("Result :", num1 + num2)
 
-print("======== Type Conversion ========")
+print()
 
-num1 = int(input("Frist Number :"))
-num2 = int(input("Second Number :"))
+# ----------------------------------------
+# Practice 5 - int()
+# ----------------------------------------
+
+num1 = int(input("Enter First Number  : "))
+num2 = int(input("Enter Second Number : "))
 
 print("Addition :", num1 + num2)
 
-print("======== Float Conversion ========")
+print()
 
+# ----------------------------------------
+# Practice 6 - float()
+# ----------------------------------------
 
-#Program 1 - float()
-
-gamma = float(input("Enter Gamma :"))
+gamma = float(input("Enter Gamma : "))
 
 print("Gamma :", gamma)
 print(type(gamma))
 
-# Program 2 - str()
+print()
 
-print("======== String Conversion ========")
+# ----------------------------------------
+# Practice 7 - str()
+# ----------------------------------------
 
 version = 1
 

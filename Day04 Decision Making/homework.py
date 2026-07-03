@@ -1,29 +1,83 @@
-print("=" * 40)
-print("    Artist Information Tool")
-print("=" * 40)
+# ==========================================
+# Day 04 - Homework
+# Topic: Decision Making (if, elif, else)
+# ==========================================
 
-# Artist Information
-artist = input("Enter Artist Name : ")
-department = input("Enter Department : ")
-experience = input("Enter Experience (Years) : ")
+print("=" * 50)
+print("          Day 04 - Homework")
+print("=" * 50)
 
-print("\n" + "=" * 40)
-print("Artist Name :", artist)
-print("Department  :", department)
-print("Experience  :", experience)
-print("=" * 40)
+print()
+print("Topic : Decision Making (if, elif, else)")
+print()
+
+# ==========================================
+# Homework 1 - Age Eligibility Tool
+# ==========================================
+
+print("=" * 50)
+print("      Age Eligibility Tool")
+print("=" * 50)
 
 print()
 
-print("=" * 40)
-print("    Resolution Checker Tool")
-print("=" * 40)
+age = int(input("Enter Your Age : "))
 
-# Resolution Information
-width = input("Enter Width : ")
-height = input("Enter Height : ")
+print()
 
-print("\n" + "=" * 40)
-print("Current Resolution")
-print(width, "x", height)
-print("=" * 40)
+if age >= 18:
+    print("Status : Eligible")
+else:
+    print("Status : Not Eligible")
+
+# ==========================================
+# Homework 2 - Password Checker
+# ==========================================
+
+print()
+print("=" * 50)
+print("       Password Checker")
+print("=" * 50)
+
+print()
+
+password = input("Enter Password : ")
+
+print()
+
+if password == "python123":
+    print("Status : Login Successful")
+else:
+    print("Status : Invalid Password")
+
+# ==========================================
+# Homework 3 - Shot Status Checker
+# ==========================================
+
+print()
+print("=" * 50)
+print("      Shot Status Checker")
+print("=" * 50)
+
+print()
+
+shot_status = input("Enter Shot Status : ")
+
+print()
+
+if shot_status == "Approved":
+    print("Status : Ready For Render")
+
+elif shot_status == "Pending":
+    print("Status : Waiting For Approval")
+
+elif shot_status == "Rejected":
+    print("Status : Fix Issues")
+
+else:
+    print("Status : Invalid Shot Status")
+
+print()
+print("=" * 50)
+print("Homework Completed")
+print("=" * 50)

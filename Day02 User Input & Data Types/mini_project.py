@@ -1,28 +1,33 @@
-# Header
-print("=" * 40)
-print("    Shot Information Tool")
-print("=" * 40)
+print("=" * 50)
+print("        Day 02 - Mini Project")
+print("=" * 50)
+
+print()
+print("Topic : User Input")
+print()
+
+print("=" * 50)
+print("      Shot Information Tool")
+print("=" * 50)
+
+print()
 
 # User Input
 
-project = input("Enter Project Name :")
-sequence = input("Enter Sequence :")
-shot = input("Enter SHot :")
-artist = input("Enter Artist Name :")
+project_name = input("Enter Project Name : ")
+sequence_name = input("Enter Sequence     : ")
+shot_name = input("Enter Shot Name    : ")
+artist_name = input("Enter Artist Name  : ")
 
-# Final Output
+print()
 
-print("\n" + "=" * 40)
+print("=" * 50)
+print("Shot Information")
+print("=" * 50)
 
-print("Project  :", project)
-print("Sequence :", sequence)
-print("Shot     :", shot)
-print("Artist   :", artist)
+# Output
 
-print("=" * 40)
-
-
-
-
-
-
+print("Project  :", project_name)
+print("Sequence :", sequence_name)
+print("Shot     :", shot_name)
+print("Artist   :", artist_name)

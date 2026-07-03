@@ -1,6 +1,19 @@
-# Day 3 - Operators
+# Day 03 - Operators
 
-## Arithmetic Operators
+## Topics
+
+- Arithmetic Operators
+- Comparison Operators
+- Assignment Operators
+- Logical Operators
+
+---
+
+# Topic 1 - Arithmetic Operators
+
+Arithmetic operators are used to perform mathematical calculations.
+
+## Operators
 
 - +
 - -
@@ -10,7 +23,7 @@
 - %
 - **
 
-## Operators with Variables
+## Example
 
 ```python
 a = 10
@@ -19,14 +32,18 @@ b = 5
 print(a + b)
 ```
 
-## User Input + Operators
+---
 
-```python
-first_number = int(input("Enter First Number : "))
-second_number = int(input("Enter Second Number : "))
-```
+# Topic 2 - Comparison Operators
 
-## Comparison Operators
+Comparison operators compare two values.
+
+They always return:
+
+- True
+- False
+
+## Operators
 
 - ==
 - !=
@@ -35,12 +52,19 @@ second_number = int(input("Enter Second Number : "))
 - >=
 - <=
 
-Comparison operators always return:
+## Example
 
-- True
-- False
+```python
+print(10 > 5)
+```
 
-## Assignment Operators
+---
+
+# Topic 3 - Assignment Operators
+
+Assignment operators update the value of a variable.
+
+## Operators
 
 - =
 - +=
@@ -48,17 +72,55 @@ Comparison operators always return:
 - *=
 - /=
 
-## Logical Operators
+## Example
+
+```python
+value = 10
+
+value += 5
+```
+
+---
+
+# Topic 4 - Logical Operators
+
+Logical operators are used to combine multiple conditions.
+
+## Operators
 
 - and
 - or
 - not
 
+## Example
+
+```python
+print(True and False)
+print(True or False)
+print(not True)
+```
+
+---
+
 ## Mini Project
 
 Calculator Tool
+
+---
 
 ## Homework
 
 - Age Checker Tool
 - Number Comparison Tool
+
+---
+
+## Production Note
+
+Operators are used in almost every VFX automation tool for:
+
+- Resolution calculations
+- Frame range calculations
+- Version comparison
+- File validation
+- Render automation

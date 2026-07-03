@@ -1,29 +1,54 @@
-print("=" * 40)
-print("    Artist Information Tool")
-print("=" * 40)
+print("=" * 50)
+print("         Day 02 - Homework")
+print("=" * 50)
 
-# Artist Information
-artist = input("Enter Artist Name : ")
-department = input("Enter Department : ")
-experience = input("Enter Experience (Years) : ")
+print()
+print("Topic : User Input and Data Types")
+print()
 
-print("\n" + "=" * 40)
-print("Artist Name :", artist)
-print("Department  :", department)
-print("Experience  :", experience)
-print("=" * 40)
+# ==================================================
+# Homework 1 - Artist Information Tool
+# ==================================================
+
+print("=" * 50)
+print("      Artist Information Tool")
+print("=" * 50)
 
 print()
 
-print("=" * 40)
-print("    Resolution Checker Tool")
-print("=" * 40)
+artist_name = input("Enter Artist Name        : ")
+department = input("Enter Department         : ")
+experience = input("Enter Experience (Years) : ")
 
-# Resolution Information
-width = input("Enter Width : ")
+print()
+
+print("=" * 50)
+print("Artist Information")
+print("=" * 50)
+
+print("Artist Name :", artist_name)
+print("Department  :", department)
+print("Experience  :", experience)
+
+print()
+
+# ==================================================
+# Homework 2 - Resolution Checker Tool
+# ==================================================
+
+print("=" * 50)
+print("      Resolution Checker Tool")
+print("=" * 50)
+
+print()
+
+width = input("Enter Width  : ")
 height = input("Enter Height : ")
 
-print("\n" + "=" * 40)
+print()
+
+print("=" * 50)
 print("Current Resolution")
+print("=" * 50)
+
 print(width, "x", height)
-print("=" * 40)

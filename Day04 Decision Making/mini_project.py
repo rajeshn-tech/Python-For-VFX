@@ -1,28 +1,46 @@
-# Header
-print("=" * 40)
-print("    Shot Information Tool")
-print("=" * 40)
+# ==========================================
+# Day 04 - Mini Project
+# Shot Validation Tool
+# ==========================================
 
+print("=" * 50)
+print("      Day 04 - Mini Project")
+print("=" * 50)
+
+print()
+print("Shot Validation Tool")
+print()
+
+# ==========================================
 # User Input
+# ==========================================
 
-project = input("Enter Project Name :")
-sequence = input("Enter Sequence :")
-shot = input("Enter SHot :")
-artist = input("Enter Artist Name :")
+project_name = input("Project Name : ")
+sequence = input("Sequence     : ")
+shot_name = input("Shot Name    : ")
 
-# Final Output
+width = int(input("Width        : "))
+height = int(input("Height       : "))
 
-print("\n" + "=" * 40)
+# ==========================================
+# Validation Result
+# ==========================================
 
-print("Project  :", project)
+print()
+print("=" * 50)
+print("Validation Result")
+print("=" * 50)
+
+print("Project  :", project_name)
 print("Sequence :", sequence)
-print("Shot     :", shot)
-print("Artist   :", artist)
+print("Shot     :", shot_name)
 
-print("=" * 40)
+if width == 1920 and height == 1080:
+    print("Status   : Shot Validation Passed")
+else:
+    print("Status   : Shot Validation Failed")
 
-
-
-
-
-
+print()
+print("=" * 50)
+print("Pipeline Finished")
+print("=" * 50)
