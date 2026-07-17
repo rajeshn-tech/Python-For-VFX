@@ -18,7 +18,7 @@ For Example:
 - Rename hundreds of render frames
 - process every node in a Nuke script
 
-Writting the same code repeatedly is:
+Writing the same code repeatedly is:
 
 - Time-consuming
 - Difficult to maintain
@@ -42,7 +42,7 @@ This is not practical.
 ## Solution
 
 A **loop** repeats a block of code automatically.
-Instead of writting the same code again and again, Python executes it repeatedly until the task is complete.
+Instead of writing the same code again and again, Python executes it repeatedly until the task is complete.
 
 ---
 
@@ -161,7 +161,7 @@ A for loop can process every frame one by one automatically.
 
 ## What is range()?
 
-`range()` is a built-in Python fuction that generates a sequence of numbers.
+`range()` is a built-in Python function that generates a sequence of numbers.
 It is commonly used with a `for` loop
 
 ---
@@ -202,7 +202,7 @@ Output:
 
 ## What is range(start, stop)
 
-`range(start, stop)` is a build-in Python fuction that generates a sequence of numbers starting from the **start** value and stoping **before** the **stop** value.
+`range(start, stop)` is a built-in Python function that generates a sequence of numbers starting from the **start** value and stoping **before** the **stop** value.
 
 Unlike `range(stop)`, we can choose where the sequence should begin.
 
@@ -304,7 +304,7 @@ Output
 
 ## What is range(start, stop, step)?
 
-`range(start, stop, step)` is a built-in Python fuction that generates a sequence of number with a specific step size.
+`range(start, stop, step)` is a built-in Python function that generates a sequence of number with a specific step size.
 Unlike `range(start, stop, step)`, we can control how much the value increases after each iteration.
 
 ---
@@ -366,7 +366,7 @@ The value **10** is not included.
 Suppose you want to process every 2nd frame.
 
 ```python
-for frame in range(1001, 1011, 2)
+for frame in range(1001, 1011, 2):
 print(frame)
 
 ```
@@ -404,7 +404,7 @@ Output
 
 Loop Execution Flow means the order in which Python executes a loop.
 Python follows a fixed sequence while running a loop.
-Understanding the execution flow helps helps you predict the output and debug programs easily.
+Understanding the execution flow helps you predict the output and debug programs easily.
 
 ---
 
@@ -443,7 +443,7 @@ It creates the sequence:
 
 Python starts the loop.
 
-Frist value:
+First value:
 
 ```python
 i = 0
@@ -581,7 +581,7 @@ Understanding execution flow is important for:
 
 - Debugging loops
 - Reading production code
-- Writting efficient pipeline tools
+- Writing efficient pipeline tools
 - Finding logical mistakes
 
 ---
@@ -685,7 +685,7 @@ The value increases by **2** after every iteration.
 
 ---
 
-## Mistake 5 - Writting code Outside the Loop by Accident
+## Mistake 5 - Writing code Outside the Loop by Accident
 
 Incorrect
 
@@ -961,7 +961,7 @@ If `render_complete` is never changed to `True`, the loop will run forever.
 - Always make sure the loop condition can become `False`.
 - Update the loop variable correctlty.
 - Test your loop with small values.
-- Be careful when writting `while` loops.
+- Be careful when writing `while` loops.
 
 ---
 
@@ -1013,7 +1013,7 @@ or
 
 ```python
 while condition:
-    if condition
+    if condition:
     break
 ```
 
@@ -1077,7 +1077,7 @@ Suppose we are checking render frames.
 If a corrupted frame is found, stop checking immediately.
 
 ```python
-for frame in range(1001, 1011)
+for frame in range(1001, 1011):
 
     if frame == 1005:
         break
@@ -1090,7 +1090,7 @@ Output
 ```text
 1001
 1002
-1004
+1003
 ```
 
 ---
@@ -1114,7 +1114,7 @@ The `brek` statement is commonly used for:
 
 ## Remember
 
-**Printing and Iteration are fifferent concepts.**
+**Printing and Iteration are different concepts.**
 
 - An iteration starts when the loop variable gets a new value.
 - Even if `break` stops the loop before `print()`, that iteration has already started.
@@ -1192,8 +1192,8 @@ for frame in range(1001, 1006):
 ```text
 1001
 1002
+1003
 1004
-1005
 ```
 ---
 
@@ -1304,7 +1304,7 @@ if render_failed:
     pass
 ```
 
-You can come back later and complete the ligic.
+You can come back later and complete the logic.
 
 ---
 
@@ -1811,7 +1811,7 @@ A Pipeline Tool can automatically publish every approved shot one by one.
 # Example 3  - Render Progress
 
 ```python
-for progress in range (0, 101, 25):
+for progress in range(0, 101, 25):
     print(f"Progress : {progress}%")
 ```
 
@@ -2095,7 +2095,7 @@ The better you become at predicting output, the easier it becomes to debug and u
 
 # Project Name
 
-Render Queue Similator
+Render Queue Simulator
 
 ----
 # Objective
@@ -2167,7 +2167,7 @@ This project combines the concepts learned in Day 05 into a simple production-st
 
 # Objective
 
-The objective if this homework is to strengthen your understanding of loops through independent practice.
+The objective is this homework is to strengthen your understanding of loops through independent practice.
 
 The questions are based only on the concepts learned in **Day 05**.
 
@@ -2221,27 +2221,4 @@ The purpose of this homework is to improve your logical thinking and coding conf
 # Summary
 
 This homework is designed to help you become more confidence with loops and prepare you for the next topics in Python.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
