@@ -81,3 +81,14 @@ print()
 print("=" * 50)
 print("Homework Completed")
 print("=" * 50)
+
+status = "Pending"
+
+if status == "Approved":
+    print("Render")
+
+elif status == "Pending":
+    print("Wait")
+
+else:
+    print("Invalid")
