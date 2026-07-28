@@ -1,7 +1,7 @@
 """
 =========================================================
 Python for VFX
-Day 05 - Loops
+Class 05 - Loops
 Practice File (Part 1)
 
 Topics Covered:

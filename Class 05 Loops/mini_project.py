@@ -1,6 +1,6 @@
 # =========================================================
 # Project : Render Queue Simulator
-# Day 05 - Mini Project
+# Class 05 - Mini Project
 #
 # Description:
 # Simulates rendering multiple shots, where each shot

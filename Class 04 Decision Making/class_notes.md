@@ -1,4 +1,4 @@
-# Day 04 - Decision Making
+# Class 04 - Decision Making
 
 ## Topics
 
@@ -505,7 +505,7 @@ The `not` operator is commonly used for:
 
 ## Objective
 
-Build a simple Shot validation Tool using Day 4 concepts.
+Build a simple Shot validation Tool using Class 04 concepts.
 
 ## User Input 
 
@@ -551,3 +551,4 @@ Before rendering or publishing a shot, the pipeline validates important informat
 - File Format
 
 If any validation fails, the render or publish process is stopped automatically.
+

@@ -18,7 +18,7 @@ Mini Project:
 
 ---
 
-### Day 2 - User Input & Data Types
+### Class 02 - User Input & Data Types
 
 * input()
 * String
@@ -36,7 +36,7 @@ Mini Project:
 
 ---
 
-### Day 3 - Operators
+### Class 03 - Operators
 
 * Arithmetic Operators
 * Operators with Variables
@@ -53,7 +53,7 @@ Mini Project:
 
 ---
 
-### Day 4 - Decision Making
+### Class 04 - Decision Making
 
 * if
 * else
@@ -68,7 +68,7 @@ Mini Project:
 
 ---
 
-### Day 5 - Loops
+### Class 05 - Loops
 
 * while loop
 * for loop
@@ -84,7 +84,7 @@ Mini Project:
 
 ---
 
-### Day 6 - Functions
+### Class 06 - Functions
 
 * Function Basics
 * Parameters
@@ -101,7 +101,7 @@ Mini Project:
 
 ---
 
-### Day 7 - Lists
+### Class 07 - Lists
 
 * List Basics
 * Index
@@ -485,4 +485,5 @@ By the end of this roadmap you will be able to:
 * Develop artist-level pipeline utilities
 * Understand production coding standards
 * Build your own automation toolkit for daily VFX work
+
 

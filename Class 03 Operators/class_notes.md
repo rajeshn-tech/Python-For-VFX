@@ -1,4 +1,4 @@
-# Day 03 - Operators
+# Class 03 - Operators
 
 ## Topics
 

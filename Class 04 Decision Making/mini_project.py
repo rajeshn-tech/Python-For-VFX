@@ -1,6 +1,6 @@
 # ==========================================================
 # Python for VFX
-# Day 04 - Mini Projects
+# Class 04 - Mini Projects
 #
 # Topics Covered:
 # 1. Decision Making (if, else, elif)

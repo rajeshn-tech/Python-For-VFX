@@ -1,6 +1,6 @@
 """
 =========================================================
-Day 06 - Strings
+Class 06 - Strings
 Topic 01 - What is String?
 =========================================================
 
@@ -1026,3 +1026,940 @@ Production Use
 # print("Output File")
 # print(file_name)
 # print("=" * 40)
+
+
+# =========================================================
+# Topic 11 - Membership Operators
+# =========================================================
+
+"""
+Objective
+
+Practice Membership Operators.
+
+Operators Covered
+
+1. in
+2. not in
+
+Production Use
+
+- File Validation
+- Pass Detection
+- Status Checking
+"""
+
+# =========================================================
+# in Operator
+# =========================================================
+
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+# print("Depth" in file_name)
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+# print("Comp" in file_name)
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# file_name =  "ABC_XYZ5120_Depth_v001.exr"
+
+# if "Depth" in file_name:
+#     print("Depth Pass Found")
+
+
+# =========================================================
+# not in Operator
+# =========================================================
+
+# status = "Completed"
+# print("Failed" not in status)
+
+# =========================================================
+# Production Example
+# =========================================================
+
+
+# status = "Completed"
+
+# if "Failed" not in status:
+#     print("Render Successful")
+
+
+# =========================================================
+# Topic 12 - Escape Characters
+# =========================================================
+
+"""
+Objective
+
+Practice Escape Characters.
+
+Escape Characters Covered
+
+1. \n
+2. \t
+3. \"
+4. \'
+5. \\
+
+Production Use
+
+- Console Output
+- Reports
+- File Paths
+- Log Messages
+"""
+
+# =========================================================
+# New Line (\n)
+# =========================================================
+
+
+# Example 1
+
+# print("Hello\nWorld")
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# print("Render Started\n Render Finished")
+
+# =========================================================
+# Tab Space (\t)
+# =========================================================
+
+# Example 1
+
+# print("Shot\tStatus")
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# print("Artist\tDepartment")
+
+
+# =========================================================
+# Double Quote (\")
+# =========================================================
+
+# Example
+
+# print("Artist said \"Render Completed\"")
+
+
+# =========================================================
+# Single Quote (\')
+# =========================================================
+
+# Example
+
+# print('Artist\'s Render')
+
+
+# =========================================================
+# Backslash (\\)
+# =========================================================
+
+# Example
+
+# print("D:\\Projects\\PythonForVFX")
+
+
+# =========================================================
+# Production Example 1
+# =========================================================
+
+# print("Render Report\n")
+# print("Shot\tStatus")
+# print("Shot001\tCompleted")
+# print("Shot002\tRendering")
+# print("Shot003\tFailed")
+
+
+# =========================================================
+# Production Example 2
+# =========================================================
+
+# project = "PythonForVFX"
+
+# print("=" * 50)
+# print("Project\t\tStatus")
+# print("=" * 50)
+# print(project + "\tCompleted")
+# print("=" * 50)
+
+
+# =========================================================
+# Production Example 3
+# =========================================================
+
+# render_path = "D:\\Projects\\Show01\\Shot010\\Render"
+
+# print("Render Path")
+# print(render_path)
+
+# =========================================================
+# Combined Example
+# =========================================================
+
+# print("=" * 60)
+# print("Deadline Render Report")
+# print("=" * 60)
+# print("Shot\t\tStatus")
+# print("Shot001\t\tCompleted")
+# print("SHot002\t\tRendering")
+# print("Shot003\t\tQueued")
+# print("=" * 60)
+
+
+# =========================================================
+# Topic 13 - Useful String Methods
+# =========================================================
+
+"""
+Objective
+
+Practice Useful String Methods.
+
+Methods Covered
+
+1. startswith()
+2. endswith()
+3. isdigit()
+4. isalpha()
+5. isalnum()
+6. isspace()
+
+Production Use
+
+- File Validation
+- Extension Checking
+- Frame Validation
+- Artist Name Validation
+- Shot Name Validation
+- User Input Validation
+"""
+
+# =========================================================
+# startswith()
+# =========================================================
+
+# Example 1
+
+# file_name = "TBO_SFE5120_v001.nk"
+
+# print(file_name.startswith("TBO"))
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# file_name = "ABC_SFE5120_v001.nk"
+
+# print(file_name.startswith("TBO"))
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# file_name = "TBO_SFE5120_Depth_v001.exr"
+
+# if file_name.startswith("TBO"):
+#     print("TBO Show File")
+# else:
+#     print("Invalid Show")
+
+
+# =========================================================
+# endswith()
+# =========================================================
+
+# Example 1
+
+# file_name = "Shot010.exr"
+
+# print(file_name.endswith(".exr"))
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# file_name = "Shot010.nk"
+
+# print(file_name.endswith(".exr"))
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# file_name = "Beauty_Pass.exr"
+
+# if file_name.endswith(".exr"):
+#     print("Valid EXR File")
+# else:
+#     print("Invalid File")
+
+
+# =========================================================
+# isdigit()
+# =========================================================
+
+# Example 1
+
+# frame = "1001"
+
+# print(frame.isdigit())
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# frame = "Frame1001"
+
+# print(frame.isdigit())
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# frame = "1050"
+
+# if frame.isdigit():
+#     print("Valid Frame Number")
+# else:
+#     print("Invalid Frame Number")
+
+
+# =========================================================
+# isalpha()
+# =========================================================
+
+# Example 1
+
+# artist = "Rajesh"
+
+# print(artist.isalpha())
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# artist = "Rajesh123"
+
+# print(artist.isalpha())
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# department = "Compositing"
+
+# if department.isalpha():
+#     print("Valid Department")
+# else:
+#     print("Invalid Department")
+
+
+# =========================================================
+# isalnum()
+# =========================================================
+
+# Example 1
+
+# shot = "Shot001"
+
+# print(shot.isalnum())
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# shot = "Shot_001"
+
+# print(shot.isalnum())
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# asset = "CarModel01"
+
+# if asset.isalnum():
+#     print("Valid Asset Name")
+# else:
+#     print("Invalid Asset Name")
+
+
+# =========================================================
+# isspace()
+# =========================================================
+
+# Example 1
+
+# text = "     "
+
+# print(text.isspace())
+
+
+# =========================================================
+# Example 2
+# =========================================================
+
+# text = "  ABC  "
+
+# print(text.isspace())
+
+
+# =========================================================
+# Production Example
+# =========================================================
+
+# user_input = "   "
+
+# if user_input.isspace():
+#     print("Input Cannot Be Empty")
+# else:
+#     print("Input Accepted")
+
+
+# =========================================================
+# Combined Production Example
+# =========================================================
+
+# file_name = "TBO_SFE5120_v001.exr"
+
+# if (
+#     file_name.startswith("TBO")
+#     and file_name.endswith(".exr")
+# ):
+#     print("Valid TBO EXR File")
+# else:
+#     print("Invalid File")
+
+
+# =========================================================
+# Input Validation Example
+# =========================================================
+
+# frame = "1001"
+
+# if frame.isdigit():
+#     print("Frame Accepted")
+# else:
+#     print("Frame Rejected")
+
+
+# =========================================================
+# Topic 15 Practice Questions
+# =========================================================
+
+"""
+Objective
+
+Practice all String concepts learned in Class 06.
+
+Topics Covered
+
+1. String Indexing
+2. Negative Indexing
+3. String Slicing
+4. String Methods
+5. String Operators
+6. Membership Operators
+7. Escape Characters
+8. Useful String Methods
+
+Instructions
+
+- Solve one question at a time.
+- Uncomment only the current question.
+- First predict the output.
+- Then run the code.
+- Write the final solution below each question.
+"""
+
+# =========================================================
+# Question 1
+# Print the first character of the String.
+# =========================================================
+
+# file_name = "Render.exr"
+
+# print(file_name[0])
+
+# print()
+
+
+# =========================================================
+# Question 2
+# Print the last character using negative indexing.
+# =========================================================
+
+# artist_name = "Rajesh"
+
+# print(artist_name[-1])
+
+# print()
+
+
+# =========================================================
+# Question 3
+# Print only "ABC" using slicing.
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# parts = file_name.split("_")
+
+# print(parts[0])
+
+
+# =========================================================
+# Question 5
+# Convert the artist name to uppercase.
+# =========================================================
+
+# artist_name = "Rajesh Navsagar"
+
+# print(artist_name.upper())
+
+# print()
+
+
+
+# =========================================================
+# Question 6 Convert the department name to lowrcase
+# =========================================================
+
+# department = "COMPOSITING"
+
+# print(department.lower())
+
+# print()
+
+
+# =========================================================
+# Question 7 Replace version v001 with v002.
+# =========================================================
+
+# file_name = "ABC_XYZ_5120_Depth_v001.exr"
+
+# print(file_name.replace("v001", "v002"))
+
+# print()
+
+
+# =========================================================
+# Question 8 Remove extra spaces from both sides.
+# =========================================================
+
+# status ="   Completed   "
+
+# print(status.strip())
+
+# print()
+
+
+
+# =========================================================
+# Question 9 Find the position of the word "Depth".
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print(file_name.find("Depth"))
+
+# print()
+
+
+# =========================================================
+# Question 10 Count the total number of underscores.
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print(file_name.count("_"))
+
+# print()
+
+
+
+# =========================================================
+# Question 11 Join Show and shot using the + Operator.
+# 
+# Expected Output
+# ABC_XYZ5120
+# =========================================================
+
+# show = "ABC"
+
+# shot = "XYZ5120"
+
+# print(show + "_" + shot)
+
+# print()
+
+
+# =========================================================
+# Question 12 Print 5 equal signs the * Operator.
+# =========================================================
+
+# print("=" * 50)
+
+# print
+
+
+
+# =========================================================
+# Question 13 Check whether "Depth" exists in the file name.
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print("Depth" in file_name)
+
+# print()
+
+
+# =========================================================
+# Question 14 Check whether "Beauty" does not exist in the file name.
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print("Beauty" not in file_name)
+
+# print()
+
+
+# =========================================================
+# Question 15 Check whether the file starts with "ABC"
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print(file_name.startswith("ABC"))
+
+# print()
+
+
+# =========================================================
+# Question 16 Check whether the file ends with ".exr".
+# =========================================================
+
+# file_name = "ABC_XYZ_Depth_V001.exr"
+
+# print(file_name.endswith(".exr"))
+
+# print()
+
+
+
+# =========================================================
+# Question 17 Check Whether the frame contains digits only.
+# =========================================================
+
+# frame = "1001"
+
+# print(frame.isdigit())
+
+# print()
+
+
+# =========================================================
+# Question 18 Check whether the artist name contains letters only.
+# =========================================================
+
+# artist_name = "Rajesh"
+
+# print(artist_name.isalpha())
+
+# print()
+
+
+# =========================================================
+# Question 19 check whether the asset name is alphanumeric.
+# =========================================================
+
+# asset_name = "CarModel101"
+
+# print(asset_name.isalnum())
+
+# print()
+
+
+# =========================================================
+# Question 20 Check whether the input contains spaces only.
+# =========================================================
+
+# user_input = "      "
+
+# print(user_input.isspace())
+
+# print()
+
+
+# =========================================================
+# Question 21 Print the following output using escape characters.
+# 
+# Render Report
+# Shot001   Completed
+# Shot002   Rendering
+# =========================================================
+
+# print("Render Report")
+# print("Shot001\tCompleted")
+# print("Shot002\tRendering")
+
+# print()
+
+
+# =========================================================
+# Question 22 Validate the file.
+#
+# Conditions
+#
+# 1. File must start with "ABC"
+# 2. File must end with ".exr"
+# 3. File must contain "Depth"
+#
+# Expected Output
+# Valid File
+# =========================================================
+
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# if(
+#     file_name.startswith("ABC")
+#     and file_name.endswith(".exr")
+#     and "Depth" in file_name
+# ):
+#     print("Valid File")
+# else:
+#     print("Invalid File")
+
+# print()
+
+
+# =========================================================
+# Question 23 Extract and print the show name.
+#
+# Expected Output
+# ABC
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# parts = file_name.split("_")
+
+# show = parts[0]
+
+# print(show)
+
+# print()
+
+# =========================================================
+# Question 24 Extract and print the version.
+#
+# Expected Output
+# v001
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# parts = file_name.split("_")
+
+# version_with_extension = parts[3]
+
+# version = version_with_extension.split(".")[0]
+
+# print(version)
+
+# print()
+
+
+# =========================================================
+# Question 25 Create a clean production report.
+#
+# Expected Output
+#
+# ==================================================
+# FILE REPORT
+# ==================================================
+# Show       : TBO
+# Shot       : SFE5120
+# Pass       : Depth
+# Version    : v001
+# Extension  : exr
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# parts = file_name.split("_")
+
+# show = parts[0]
+# shot = parts[1]
+# render_pass = parts[2]
+
+# version_with_extension = parts[3]
+
+# version_parts = version_with_extension.split(".")
+
+# version = version_parts[0]
+# extension = version_parts[1]
+
+# print("=" * 50)
+# print("FILE REPORT")
+# print("=" * 50)
+# print("Show       :", show)
+# print("Shot       :", shot)
+# print("Pass       :", render_pass)
+# print("Version    :", version)
+# print("Extension  :", extension)
+# print("=" * 50)
+
+# print()
+
+
+# =========================================================
+# Class 06 - Topic 16 Output Prediction
+# =========================================================
+
+# =========================================================
+# Question 1 Predict the output.
+# =========================================================
+
+# text = "Python"
+
+# print(text[2])
+
+# print()
+
+# Output 
+ 
+# t
+
+# =========================================================
+# Question 2 Predict the Output
+# =========================================================
+
+# text = "Render"
+
+# print(text[-1])
+
+# print()
+
+# Output 
+
+# r
+
+# =========================================================
+# Question 3 Predict the Output
+# =========================================================
+
+# file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+# print(file_name.startswith("ABC"))
+
+# print()
+
+# Output
+
+# True
+
+# =========================================================
+# Question 4 Predict the Output
+# =========================================================
+
+# file_name = "ABC_XYZ_Depth_v001.exr"
+
+# print(file_name.endswith(".exr"))
+
+# print()
+
+# Output
+
+# True
+
+# =========================================================
+# Question 5 Predict the Output
+# =========================================================
+
+# artist = "Rajesh123"
+
+# print(artist.isalpha())
+
+# print()
+
+# Output
+
+# False
+
+# =========================================================
+# Question 6 Predict the Output
+# =========================================================
+
+# frame = "1001"
+
+# print(frame.isdigit())
+
+# print()
+
+# Output
+
+# True
+
+# =========================================================
+# Question 7 Predict the Output
+# =========================================================
+
+# show = "ABC"
+
+# shot = "XYZ5120"
+
+# print(show + "_" + shot)
+
+# print()
+
+# Output
+
+# ABC_XYZ5120
+
+# =========================================================
+# Question 8 Predict the Output
+# =========================================================
+
+# print("=" * 20)
+
+# print()
+
+# Output
+
+# ====================
+
+
+

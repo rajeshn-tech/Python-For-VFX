@@ -1,4 +1,4 @@
-## Day 5 - Loops
+## Class 05 - Loops
 
 Loops are used to execute the same block of code multiple times.
 Instead of writing the same code repeatedly, we use loops to automate repetitive tasks.
@@ -1349,7 +1349,7 @@ pass      | No         |  No                    | Yes          |
 ---------------------------------------------------------------|
 
 
-# Day 05 - Topic 14
+# Class 05 - Topic 14
 # Nested Loops (Basic)
 
 ---
@@ -1907,7 +1907,7 @@ Understanding loops is one of the first steps toward becoming a Pipelinr TD or V
 
 # Objective
 
-In this topic, we will practice all the concepts learned in **Day 05**.
+In this topic, we will practice all the concepts learned in **Class 05**.
 
 This topic does **not** introduce any new Python concepts.
 
@@ -1976,7 +1976,7 @@ For example:
 - Batch Processing
 - Creating Reports
 
-All these tasks use the same Python concepts that you learned in **Day 05**.
+All these tasks use the same Python concepts that you learned in **Class 05**.
 
 ---
 
@@ -2102,7 +2102,7 @@ Render Queue Simulator
 
 The objective of this mini project is to simulate how a render farm process multiple shots and their frames.
 
-The project combines all the loop concepts learned in Day 05.
+The project combines all the loop concepts learned in Class 05.
 
 ---
 
@@ -2158,7 +2158,7 @@ This mini project demonstrates the basic idea behind render automation.
 
 # Summary
 
-This project combines the concepts learned in Day 05 into a simple production-style example.
+This project combines the concepts learned in Class 05 into a simple production-style example.
 
 
 # Topic 19 - Homework
@@ -2169,7 +2169,7 @@ This project combines the concepts learned in Day 05 into a simple production-st
 
 The objective is this homework is to strengthen your understanding of loops through independent practice.
 
-The questions are based only on the concepts learned in **Day 05**.
+The questions are based only on the concepts learned in **Class 05**.
 
 No new Python concepts are introduced.
 
@@ -2221,4 +2221,5 @@ The purpose of this homework is to improve your logical thinking and coding conf
 # Summary
 
 This homework is designed to help you become more confidence with loops and prepare you for the next topics in Python.
+
 

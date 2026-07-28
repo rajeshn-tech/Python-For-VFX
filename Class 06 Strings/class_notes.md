@@ -1,4 +1,4 @@
-# Day 06 - Strings
+# Class 06 - Strings
 
 ## Topic 1 - What is String?
 
@@ -2245,7 +2245,1191 @@ Both operators are widely used in VFX production for:
 - Console Formatting
 
 
+# Topic 11 - Membership Operators
 
+## What are Membership Operators?
+
+Membership Operators are used to check whether a value exists inside another object.
+
+Python provides two Membership Operators.
+
+- `in`
+- `not in`
+
+These operators return:
+
+- True 
+- False
+
+---
+
+# in operators
+
+## Purpose
+
+The `in` operators check whether a value exists inside a String.
+
+---
+
+## Syntax
+
+```python
+value in string
+```
+
+## Example 1
+
+```python
+file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+print("Depth" in file_name)
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+print("Comp" file_name)
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+if "Depth" in file_name:
+        print("Depth Pass Found")
+```
+
+Output
+
+```text
+Depth Pass Found
+```
+
+---
+
+### Summary
+
+- Check if a value exists.
+- Returns True or False.
+
+---
+
+# not in Operator
+
+## Purpose
+
+The `not in` operator check whether a value does NOT exit.
+
+---
+
+## Syntax
+
+```python
+value not in strinf
+```
+
+---
+
+## Example 
+
+```python
+file_name = "ABC_XYZ5120_Depth_v001.exr"
+print("Beauty" not in file_name)
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Production Example
+
+```python
+status = "Completed"
+
+if "Failed" not in status:
+        print("Job Successful")
+```
+
+---
+
+### Summary
+
+- Check if a value is absent.
+- Returns True or False.
+
+---
+
+# Topic Summary
+
+|-----------|------------------------------|
+| Operator  |  Purpose                     |
+|-----------|------------------------------|
+| in        | Check if value exists        |
+|-----------|------------------------------|
+| not in    | Check if value does not exit |
+|-----------|------------------------------|
+
+
+# Topic 12 - Escape Characters
+
+## What are Escape Characters?
+
+Escape Characters are special characters that start with a backslash (`\`).
+
+They are used to represent special characters inside a String.
+
+Some common Escape Characters are:
+
+- `\n` -> New Line
+- `\t` -> Tab Space
+- `\"` -> Double Quote
+- `\'` -> Single Quote
+- `\\` -> Backslash
+
+---
+
+# New Line (\n)
+
+## Purpose
+
+The `\n` escape character moves the cursor to the next line.
+
+---
+
+## Example
+
+```python
+print("Render Started\nRender Finished")
+```
+
+Output
+
+```text
+Render Started
+Render Finished
+```
+
+---
+
+# Tab Space (\t)
+
+## Purpose
+
+The `\t` escape character inserts a tab space.
+
+---
+
+## Example
+
+```python
+print("Shot\tStatus")
+```
+
+Output
+
+```text
+Shot    Status
+```
+
+---
+
+# Double Quote(\\")
+
+## Purpose
+
+Used to print double quotes inside a String.
+
+---
+
+## Example
+
+```python
+print("Artist said\"Render Completed\"")
+```
+
+Output
+
+```text
+Artist said "Render Completed"
+```
+
+---
+
+# Single Quote (\\')
+
+## Purpose
+
+Used to print a single quote inside a String.
+
+---
+
+## Example
+
+```python
+print('Artist\'s Render')
+```
+
+Output
+
+```text
+Artist's Render
+```
+
+---
+
+# Backslash (\\\\)
+
+## Purpose
+
+Used to print a backslash.
+
+---
+
+## Example
+
+```python
+print("D:\\Projects\\ABC")
+```
+
+Output
+
+```text
+D:\Projects\ABC
+```
+
+---
+
+## Production Example
+
+```python
+print("Render Report\n")
+print("Shot\tStatus")
+print("Shot001\tCompleted")
+print("Shot002\tRendering")
+```
+
+Output
+
+```text
+Render Report
+
+Shot    Status
+Shot001 Completed
+Shot002 Rendering
+```
+
+---
+
+## Summary
+
+Common Escape Characters
+
+|---------|--------------|
+| Escape  | Purpose      |
+|---------|--------------|
+| `\n`    | New Line     |
+|---------|--------------|
+| `\t`    | Tab Space    |
+|---------|--------------|
+| `\"`    | Double Quote |
+|---------|--------------|
+| `\'`    | Single Quote |
+|---------|--------------|
+| `\\`    | Backslash    |
+|---------|--------------|
+
+
+# Topic 13 - Useful String Methods
+
+## Introduction
+
+Python provides many useful String Methods for checking and validating text.
+
+In this topic, we will learn:
+
+- `startwith()`
+- `endswith()`
+- `isdigit()`
+- `isalpha()`
+- `isalnum()`
+- `isspace()`
+
+These method return:
+
+- `True`
+- `False`
+
+They are commonly used in:
+
+- File Validation
+- Version Checking
+- Extension Checking
+- User Input Validation
+- Shot Name Validation
+- Pipeline Automation
+
+---
+
+# startswith()
+
+## Purpose
+
+The `startswith()` method check whether a String starts with a specific value.
+
+---
+
+## Syntax
+
+```python
+string.startswith(value)
+```
+
+---
+
+## Example 1
+
+```python
+file_name = "ABC_XYZ5120_v001.nk" 
+
+print(file_name.startswith("ABC"))
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```pyhton
+file_name = "ABC_XYZ5120_v001.nk"
+
+print(file_name.startswith("XYZ"))
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+file_name = "TBO_SFE5120_v002.nk"
+
+if file_name.startswith("TBO"):
+        print("TBO Show File")
+```
+
+Output
+
+```text
+TBO Show File
+```
+
+---
+
+### Summary
+
+- Checks the beginning of a String.
+- Returns `True` or `False`.
+- Useful for validating show names and prefixes.
+
+---
+
+# endswith()
+
+## Purpose
+
+The `endswith()` method checks whether a String ends with a specific value.
+
+---
+
+
+## Syntax
+
+```python
+string.endswith(value)
+```
+
+---
+
+## Example 1
+
+```python
+file_name = "ABC_XYZ5120_v001.nk"
+
+print(file_name.endswith(".nk"))
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+file_name = "ABC_XYZ5120_v001.nk"
+
+print(file_name.endswith(".exr"))
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+file_name = "ABC_XYZ5120_Depth_v001.exr"
+
+if file_name.endswith(".exr"):
+        print("EXR File Found")
+```
+
+Output
+
+```text
+EXR File Found
+```
+
+---
+
+### Summary
+
+- Checks the end of a String.
+- Returns `True` or `False`.
+- Useful for checking file extensions.
+
+---
+
+# isdigit()
+
+## Purpose
+
+The `isdigit()` method check whether all characters in a String are digit.
+
+---
+
+## Syntax
+
+```python
+string.isdigit()
+```
+
+## Example 1
+
+```python
+frame = "1001"
+
+print(frame.isdigit())
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+frame = "Frame1001"
+
+print(frame.isdigit())
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+frame_input = "1050"
+
+if frame_input.isdigit():
+        print("Valid Frame Number")
+```
+
+Output
+
+```text
+Valid Frame Number
+```
+
+---
+
+## Important
+
+A negative number contains '-', so it returns `False`.
+
+```python
+number = "-25"
+
+print(number.isdigit())
+```
+
+Output
+```text
+False
+```
+---
+
+### Summary
+
+- Checks whether all character are number.
+- Useful for frame numbers, version number, and numric input.
+
+---
+
+# isalpha()
+
+## Purpose
+
+The `isalpha()` method checks whether all characters in a String are alphabet letters.
+
+---
+
+## Syntax
+
+```python
+string.isalpha()
+```
+
+---
+
+## Example 1
+
+```python
+artist = "Rajesh"
+
+print(artist.isalpha())
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+artist = "Rajesh123"
+
+print(artist.isalpha())
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Important
+
+Spaces are not alphabet characters.
+
+```python
+artist = "Rajesh Navsagar"
+
+print(artist.isalpha())
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+department = "Compositing"
+
+if department.isalpha():
+        print("Valid Department Name")
+```
+
+---
+
+### Summary
+
+- Check whether all characters are letters.
+- Numbers, spaces, and symbols return `False`.
+
+---
+
+# isalnum()
+
+## Purpose
+
+The `isalnum()` method checks whether all characters are letters or numbers.
+
+Alphanumric means:
+
+- Alphabet
+- Number
+
+---
+
+## Syntax
+
+```python
+string.isalnum()
+```
+
+---
+
+## Example 1
+
+```python
+shot_name = "Shot001"
+
+print(shot_name.isalnum())
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+shot_name = "shot_001"
+print(shot_name.isalnum())
+```
+
+Output
+
+```text
+False
+```
+
+The underscore `_` is a special character.
+
+---
+
+## Oroduction Example
+
+```python
+asset_name = "CarModel101"
+
+if asset_name.isalnum():
+        print("Valid Asset Name")
+```
+
+Output
+
+```text
+Valid Asset Name
+```
+
+---
+
+### Summary
+
+- Accepts letters and numbers.
+- Space and special characters return `False`.
+
+---
+
+# isspace()
+
+## Purpose
+
+The `isspace()` method checks whether all characters in a String are spaces.
+
+---
+
+## Syntax
+
+```python
+string.isspace()
+```
+
+---
+
+## Example 1
+
+```python
+text = " "
+
+print(text.isspace())
+```
+
+Output
+
+```text
+True
+```
+
+---
+
+## Example 2
+
+```python
+text =" ABC "
+
+print(text.isspace())
+```
+
+Output
+
+```text
+False
+```
+
+---
+
+## Production Example
+
+```python
+artist_input = " "
+
+if artist_input.isspace():
+        print("Artist Name Cannot Be Empty")
+```
+
+Output
+
+```text
+Artist Name Cannot Be Empty
+```
+
+---
+
+### Summary
+
+- Check Whether the String contains only whitespace.
+- Useful for validating empty-looking user input.
+
+---
+
+# Combined Production Example
+
+```python
+file_name = "TBO_SFE5120_v002.exr"
+
+if file_name.startswith("TBO") and file_name.endswith(".exr"):
+        print("Valid TBO EXR File")
+else:
+        print("Invalid File")
+```
+
+Output
+
+```text
+Valid TBO EXR File
+```
+
+---
+
+
+# Topic Summary
+
+|----------------|-----------------------------------|
+| Method         | Purpose                           |
+|----------------|-----------------------------------|
+| `startswith()` | Checks the beginning of a String  |
+|----------------|-----------------------------------|
+| `endswith()`   | Checks the end of a String        |
+|----------------|-----------------------------------|
+| `isdigit()`    | Checks for digits only            |
+|----------------|-----------------------------------|
+| `isalpha()`    | Checks for letters only           |
+|----------------|-----------------------------------|
+| `isalnum()`    | Checks for letters and numbers    |
+|----------------|-----------------------------------|
+| `isspace()`    | Checks for spaces only            |
+|----------------|-----------------------------------|
+
+
+These methods are useful for validating:
+
+- File Names
+- File Extensions
+- Frame Numbers
+- Artist Names
+- Shot Names
+- User Inputs
+
+
+# Topic 14 Real VFX Production Examples
+
+## Introduction
+
+In production, we rarely use a single String Method.
+
+Instead, multiple String Methods and Operators are used together to validate, process, and organize data.
+
+Common use cases include:
+
+- File Name Validation
+- Shot Name Validation
+- Render Output Validation
+- Version Checking
+- Department Detection
+- Pipeline Automation
+
+---
+
+# Example 1 File Extension Validation
+
+```python
+file_name = "ABC_XYZ5120_Depth_v002.exr"
+
+if file_name.endswith(".exr"):
+        print("Valid EXR File")
+else:
+        print("Invalid File")
+```
+
+Output
+
+```text
+Valid EXR File
+```
+
+---
+
+# Example 2 - Show Validation
+
+```python
+file_name = "ABC_XYZ5120_Depth_v002.exr"
+
+if file_name.startwith("ABC"):
+        print("ABC Project")
+```
+
+Output
+
+```text
+ABC Project
+```
+
+---
+
+# Example 3 - Department Detection
+
+```python
+file_name = "ABC_XYZ5120_Depth_v002.exr"
+
+if "Depth" in file_name:
+        print("Depth Pass")
+```
+
+Output
+
+```text
+Depth Pass
+```
+
+---
+
+# Example 4 - Frame Validation
+
+```python
+frame = "1050"
+
+if frame.isdigit():
+        print("Valid Frame")
+```
+
+Output
+
+```text
+Valid Frame
+```
+
+---
+
+# Example 5 - Artist Name Validation
+
+```python
+artist = "Rajesh"
+
+if artist.isalpha():
+        print("Valid Artist Name")
+```
+
+Output
+
+```text
+Valid Artist Name
+```
+
+---
+
+# Example 6 - Asset Name Validation
+
+```python
+asset = "CarMode101"
+
+if asset.isalnum():
+        print("Valid Asset")
+```
+
+Output
+
+```text
+Valid Asset
+```
+
+---
+
+# Example 7 - Empty Input Validation
+
+```python
+artist = "  "
+
+if artist.isspace():
+        print("Artist Name Required")
+```
+
+Output
+
+```text
+Artist Name Required
+```
+
+---
+
+# Example 8 - Complete Production Validation
+
+```python
+file_name = "ABC_XYZ5120_Depth_v002.exr"
+
+if(
+        file_name.startwith("ABC")
+        and file_name.endswith(".exr")
+        and "Depth" in file_name
+):
+        print("Process File")
+else:
+        print("Skip File")
+```
+
+Output
+
+```text
+Process File
+```
+
+---
+
+## Production Workflow
+
+A typical pipeline validation may check:
+
+- Show Name
+- Shot Name
+- Depratment
+- Version
+- File Extension
+- Frame Number
+
+Only after all validations pass, the file is processed.
+
+---
+
+## Summary
+
+Strings are used throughout VFX production for:
+
+- File Names
+- Render Outputs
+- Folder Paths
+- Shot Names
+- Asset Names
+- Reports
+- Automation Scripts
+
+Learning String Methods helps in building production-ready Python tools.
+
+
+
+# Topic 15 - Practice Questions
+
+## Objective
+
+Practice all String concepts learned in This Class.
+
+These Questions are designed to improve logical and strengthen understanding of Strings before moving to the Mini Project.
+
+Topic Covered
+
+- String Indexing
+- String Slicing
+- String Methods
+- String Operators
+- Membership Operators
+- Escape Characters
+- Useful String Methods
+
+The solutions should be written in `practice.py`.
+
+
+# Topic 16 - Output Prediction
+
+## Objective
+
+Improve logical thinking by predicting the output before executing the program.
+
+Predicting the output helps understand how Python executes code internally.
+
+Always follow these steps:
+
+1. Read the code carefully. 
+2. Predict the output.
+3. Run the program.
+4. Compare your prediction with the actual output.
+5. Understand any mistakes.
+
+Output Prediction is one of the best ways to improve programming skills.
+
+---
+
+## Benefits.
+
+- Improves Logical Thinking
+- Increases Problem Solving Skill
+- Helps Find Mistakes
+- Builds Confidence
+- Improves Debugging Skills
+
+---
+
+## Summary
+
+Always predict the output before running the program.
+
+This habit helps you become a better Python programmer.
+
+
+# Topic 17 - Mini Project
+
+## Project Name - File Name Analyzer
+
+---
+
+## Objective
+
+Create a Python program that analyzes a production file file name and extracts useful information 
+
+The program should practice all important String concepts learned in This Class.
+
+---
+
+## Concepts Used
+
+- String Indexing
+- String Slicing
+- split()
+- startwith()
+- endswith()
+- in
+- count()
+- replace()
+
+
+---
+
+## Input
+
+```text
+ABC_XYZ5120_Depth_v001.exr
+```
+
+---
+
+## Expected Output
+
+```text
+==============================
+FILE REPORT
+==============================
+
+Show Name   : ABC
+Shot Name   : XYZ5120
+Department  : Depth
+Version     : V001
+Extension   : exr
+
+Valid EXR   : True
+Depth Pass  : True
+Starts With : ABC
+
+==============================
+```
+
+---
+
+
+## Learnig Outcome
+
+After completing this project, you will be able to:
+
+- Read production file names.
+- Extract information using String Methods.
+- Validate file names.
+- Build clean console reports.
+
+This project simulates a simple production pipeline tool.
 
 
 

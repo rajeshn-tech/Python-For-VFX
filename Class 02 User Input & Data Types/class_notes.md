@@ -1,4 +1,4 @@
-# Day 02 - User Input & Data Types
+# Class 02 - User Input & Data Types
 
 ## Topics
 

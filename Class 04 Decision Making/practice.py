@@ -1,9 +1,9 @@
 # ==========================================
-# Day 04 - Decision Making
+# Class 04 - Decision Making
 # ==========================================
 
 print("=" * 50)
-print("      Day 04 - Decision Making")
+print("      Class 04 - Decision Making")
 print("=" * 50)
 
 # ==========================================

@@ -1,5 +1,5 @@
 print("=" * 50)
-print("          Day 02 - Practice")
+print("          Class 02 - Practice")
 print("=" * 50)
 
 print()
