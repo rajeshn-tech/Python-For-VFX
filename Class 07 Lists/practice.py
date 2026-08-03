@@ -397,80 +397,451 @@
 # print(shows)
 
 # =========================================================
-# Day 07 - Topic 7
+# Class 07 - Topic 7
 # remove()
 # =========================================================
 
-print("========== Topic 7 ==========\n")
+# print("========== Topic 7 ==========\n")
 
 # =========================================================
-# Example 1
-# Remove a Show
+# Example 1 Remove a Show
 # =========================================================
 
-shows = ["ABC", "XYZ", "KLM"]
+# shows = ["ABC", "XYZ", "KLM"]
 
-shows.remove("XYZ")
+# shows.remove("XYZ")
 
-print(shows)
+# print(shows)
 
-print()
-
-# =========================================================
-# Example 2
-# Remove an Artist
-# =========================================================
-
-artists = ["Rajesh", "Amit", "Rahul"]
-
-artists.remove("Amit")
-
-print(artists)
-
-print()
+# print()
 
 # =========================================================
-# Example 3
-# Remove a Frame
+# Example 2 Remove an Artist
 # =========================================================
 
-frames = [1001, 1002, 1003]
+# artists = ["Rajesh", "Amit", "Rahul"]
 
-frames.remove(1002)
+# artists.remove("Amit")
 
-print(frames)
+# print(artists)
 
-print()
-
-# =========================================================
-# Example 4
-# Production Example
-# =========================================================
-
-render_queue = [
-    "SH010",
-    "SH020",
-    "SH030",
-    "SH040"
-]
-
-render_queue.remove("SH020")
-
-print(render_queue)
-
-print()
+# print()
 
 # =========================================================
-# Example 5
-# insert() vs remove()
+# Example 3 Remove a Frame
 # =========================================================
 
-shows = ["ABC", "XYZ", "KLM"]
+# frames = [1001, 1002, 1003]
 
-shows.insert(1, "BTT")
+# frames.remove(1002)
 
-print(shows)
+# print(frames)
 
-shows.remove("BTT")
+# print()
 
-print(shows)
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_queue = [
+#     "SH010",
+#     "SH020",
+#     "SH030",
+#     "SH040"
+# ]
+
+# render_queue.remove("SH020")
+
+# print(render_queue)
+
+# print()
+
+# =========================================================
+# Example 5 insert() vs remove()
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM"]
+
+# shows.insert(1, "BTT")
+
+# print(shows)
+
+# shows.remove("BTT")
+
+# print(shows)
+
+
+# =========================================================
+# Class 07 - Topic 8
+# pop()
+# =========================================================
+
+# print("========== Topic 8 ==========\n")
+
+# =========================================================
+# Example 1 Remove a Show using Index
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM"]
+
+# shows.pop(1)
+
+# print(shows)
+
+# print()
+
+
+# =========================================================
+# Example 2 Remove a Frame using Index
+# =========================================================
+
+# frames = [1001, 1002, 1003]
+
+# frames.pop(0)
+
+# print(frames)
+
+# print()
+
+
+# =========================================================
+# Example 3 Remove an Artist using Index
+# =========================================================
+
+# artists = ["Rajesh", "Amit", "Rahul"]
+
+# artists.pop(2)
+
+# print(artists)
+
+# print()
+
+
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_queue = [
+#     "SH010",
+#     "SH020",
+#     "SH030",
+#     "SH040"
+# ]
+
+# render_queue.pop(1)
+
+# print(render_queue)
+
+# print()
+
+
+# =========================================================
+# Example 5 remove() vs pop()
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM", "BTT"]
+
+# shows.remove("XYZ")
+
+# print(shows)
+
+# shows.pop(1)
+
+# print(shows)
+
+
+# =========================================================
+# Class 07 - Topic 9
+# clear()
+# =========================================================
+
+# print("========== Topic 9 ==========\n")
+
+# =========================================================
+# Example 1 Clear a Show List
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM"]
+# shows.clear()
+
+# print(shows)
+
+# print()
+
+# =========================================================
+# Example 2 Clear a Frame List
+# =========================================================
+
+# frames = [1001, 1002, 1003, 1004]
+
+# frames.clear()
+
+# print(frames)
+
+# print()
+
+
+# =========================================================
+# Example 3 Clear an Artist List
+# =========================================================
+
+# artists = ["Rajesh", "Amit", "Rahul"]
+
+# artists.clear()
+
+# print(artists)
+
+# print()
+
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_queue = [
+#     "SH010",
+#     "SH020",
+#     "SH030",
+#     "SH040"
+# ]
+
+# render_queue.clear()
+
+# print(render_queue)
+
+# print()
+
+# =========================================================
+# Example 5 pop() vs clear()
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM"]
+
+# shows.pop(1)
+
+# print(shows)
+
+# shows.clear()
+
+# print(shows)
+
+
+# =========================================================
+# Day 07 - Topic 10
+# sort()
+# =========================================================
+
+# print("========== Topic 10 ==========\n")
+
+# =========================================================
+# Example 1 Sort Numbers
+# =========================================================
+
+# frames = [1005, 1002, 1008, 1001]
+
+# frames.sort()
+
+# print(frames)
+
+# print()
+
+
+# =========================================================
+# Example 2 Sort Show Names
+# =========================================================
+
+# shows = ["XYZ", "ABC", "KLM", "BTT"]
+
+# shows.sort()
+
+# print(shows)
+
+# print()
+
+
+# =========================================================
+# Example 3 Sort Artist Names
+# =========================================================
+
+# artists = ["Rahul", "Amit", "Rajesh", "Deepak"]
+
+# artists.sort()
+
+# print(artists)
+
+# print()
+
+
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_frames = [1050, 1001, 1015, 1030, 1020]
+
+# render_frames.sort()
+
+# print(render_frames)
+
+# print()
+
+
+# =========================================================
+# Example 5 Before and After Sorting
+# =========================================================
+
+# frames = [1010, 1003, 1007, 1001]
+
+# print("Before Sort :", frames)
+
+# frames.sort()
+
+# print("After Sort  :", frames)
+
+
+# =========================================================
+# Class 07 - Topic 10 sort(reverse=True)
+# =========================================================
+
+
+# =========================================================
+# Example 1 Sort Numbers in Descending Order
+# =========================================================
+
+# frames = [1002, 1008, 1001, 1005]
+
+# frames.sort(reverse=True)
+
+# print(frames)
+
+# print()
+
+# =========================================================
+# Example 2 Sort Show Names in Descending Order
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM", "BTT"]
+
+# shows.sort(reverse=True)
+
+# print(shows)
+
+# print()
+
+# =========================================================
+# Example 3 Sort Artist Names in Descending Order
+# =========================================================
+
+# artists = ["Rajesh", "Amit", "Deepak", "Rahul"]
+
+# artists.sort(reverse=True)
+
+# print(artists)
+
+# print()
+
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_time = [25, 10, 18, 5, 30]
+
+# render_time.sort(reverse=True)
+
+# print(render_time)
+
+# print()
+
+# =========================================================
+# Example 5 Ascending vs Descending
+# =========================================================
+
+# frames = [1002, 1008, 1001, 1005]
+
+# frames.sort()
+
+# print("Ascending  :", frames)
+
+# frames.sort(reverse=True)
+
+# print("Descending :", frames)
+
+
+# =========================================================
+# Day 07 - Topic 11
+# reverse()
+# =========================================================
+
+# print("========== Topic 11 ==========\n")
+
+# =========================================================
+# Example 1 Reverse Show Names
+# =========================================================
+
+# shows = ["ABC", "XYZ", "KLM"]
+
+# shows.reverse()
+
+# print(shows)
+
+# print()
+
+
+# =========================================================
+# Example 2 Reverse Frame Numbers
+# =========================================================
+
+# frames = [1001, 1002, 1003, 1004]
+
+# frames.reverse()
+
+# print(frames)
+
+# print()
+
+
+# =========================================================
+# Example 3 Reverse Artist Names
+# =========================================================
+
+# artists = ["Rajesh", "Amit", "Rahul", "Deepak"]
+
+# artists.reverse()
+
+# print(artists)
+
+# print()
+
+
+# =========================================================
+# Example 4 Production Example
+# =========================================================
+
+# render_queue = [
+#     "SH010",
+#     "SH020",
+#     "SH030",
+#     "SH040"
+# ]
+
+# render_queue.reverse()
+
+# print(render_queue)
+
+# print()
+
+
+# =========================================================
+# Example 5 sort(reverse=True) vs reverse()
+# =========================================================
+
+# frames = [1005, 1001, 1008]
+
+# frames.sort(reverse=True)
+
+# print("sort(reverse=True) :", frames)
+
+# frames = [1005, 1001, 1008]
+
+# frames.reverse()
+
+# print("reverse()          :", frames)
+
