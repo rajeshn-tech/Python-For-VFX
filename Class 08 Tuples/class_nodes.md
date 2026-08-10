@@ -536,7 +536,7 @@ Instead of creating another Tuple manually, we use slicing.
 
 ---
 
-## SYntax
+## Syntax
 
 ```python
 tuple_name[start:stop]
@@ -815,7 +815,6 @@ Image resolution is fixed, so a Tuple is a better choice.
 
 ## Comparison Table
 
-|------------------|---------|---------|
 | **Feature**      |**List** |**Tuple**|
 |------------------|---------|---------|
 | Brackets         | `[]`    | `()`    |
@@ -827,7 +826,6 @@ Image resolution is fixed, so a Tuple is a better choice.
 | Duplicate Values |  Yes    |  Yes    |
 |------------------|---------|---------|
 | Mixed Data Types |  Yes    |  Yes    |
-|------------------|-------- |---------|
 
 ---
 
@@ -1286,9 +1284,189 @@ ValueError: tuple.index(x): x not in tuple
 
 ---
 
+# Topic 8 - Output Prediction
+
+## Objective
+
+Predict the output without running the code.
+
+This Improves:
+
+- Logical Thinking
+- Code Reading
+- Debugging Skills
+
+---
+
+## Question 1
+
+```python
+shows = ("ABC", "XYZ", "KLM")
+
+print(shows[1])
+```
+
+### Output
+
+```text
+XYZ
+```
+
+---
+
+## Question 2
+
+```python
+frames = (1001, 1002, 1003, 1004)
+
+print(frames[-2])
+```
+
+### Output
+
+```text
+1003
+```
+
+---
+
+## Question 3
+
+```python
+shows = ("ABC", "XYZ", "KLM", "PQR")
+
+print(shows[1:3])
+```
+
+### Output
+
+```text
+('XYZ', 'KLM')
+```
+
+---
+
+## Question 4
+
+```python
+resolution = (4096, 2160)
+
+width, height = resolution
+
+print(width)
+print(height)
+```
+
+### Output
+
+```text
+4096
+2160
+```
+
+## Question 5
+
+```python
+shows = ("ABC", "XYZ", "ABC", "KLM")
+
+print(shows.count("ABC"))
+```
+
+### Output
+
+```text
+2
+```
+
+---
+
+## Question 6
+
+```python
+shows = ("ABC", "XYZ", "KLM")
+
+print(shows.index("KLM"))
+```
+
+### Output
+
+```text
+2
+```
+
+---
 
 
+## Question 7
 
+```python
+shot = ("SH010")
+
+print(shot)
+```
+
+### Output
+
+```text
+SH010
+```
+
+---
+
+## Question 8
+
+```python
+shot = ("SH010",)
+
+print(shot)
+```
+
+### Output
+
+```text
+('SH010',)
+```
+
+---
+
+## Question 9
+
+```python
+data = ("Rajesh", 1001, True)
+
+print(data[0])
+```
+
+### Output
+
+```text
+Rajesh
+```
+
+---
+
+## Question 10
+
+```python
+shows = ("ABC", "XYZ")
+
+print(shows.index("PQR"))
+```
+
+### Output
+
+```text
+ValueError
+```
+
+---
+
+## Summary 
+
+If you predict all the above outputs correctly, you have understand the Tuple fundamentals.
+
+
+---
 
 
 # Topic 9 - Mini Project

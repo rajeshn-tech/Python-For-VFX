@@ -2396,17 +2396,3 @@ Use `reverse()` when yo want to reverse the current order of a List.
 
 - `sort(reverse=True)` -> Largest to Smallest.
 - `reverse()` -> Current order becomes opposite.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
