@@ -489,12 +489,154 @@ Topic 07 - Looping Through Dictionary
 # Question 4
 # =========================================================
 
-job = {
-    "Job Name": "ABC_SH010",
-    "Status": "Completed"
-}
+# job = {
+#     "Job Name": "ABC_SH010",
+#     "Status": "Completed"
+# }
 
-for key, value in job.items():
-    print(key, ":", value)
+# for key, value in job.items():
+#     print(key, ":", value)
 
 
+"""
+=========================================================
+Class 09 - Dictionaries
+Topic 09 - Output Prediction
+=========================================================
+"""
+
+# print("========== Output Prediction ==========\n")
+
+# =========================================================
+# Question 1
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing"
+# }
+
+# print(artist["Name"])
+
+# print()
+
+# =========================================================
+# Question 2
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh"
+# }
+
+# artist["Department"] = "Lighting"
+
+# print(artist)
+
+# print()
+
+# =========================================================
+# Question 3
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing"
+# }
+
+# del artist["Department"]
+
+# print(artist)
+
+# print()
+
+# =========================================================
+# Question 4
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing",
+#     "Experience": 3
+# }
+
+# print(artist.keys())
+
+# print()
+
+# =========================================================
+# Question 5
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing",
+#     "Experience": 3
+# }
+
+# print(artist.values())
+
+# print()
+
+# =========================================================
+# Question 6
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh"
+# }
+
+# print(artist.get("Age"))
+
+# print()
+
+# =========================================================
+# Question 7
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing"
+# }
+
+# for key in artist:
+#     print(key)
+
+# print()
+
+# =========================================================
+# Question 8
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing"
+# }
+
+# for value in artist.values():
+#     print(value)
+
+# print()
+
+# =========================================================
+# Question 9
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh",
+#     "Department": "Compositing"
+# }
+
+# for key, value in artist.items():
+#     print(key, ":", value)
+
+# print()
+
+# =========================================================
+# Question 10
+# =========================================================
+
+# artist = {
+#     "Name": "Rajesh"
+# }
+
+# print(artist["Age"])

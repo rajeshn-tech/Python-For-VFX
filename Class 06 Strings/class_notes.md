@@ -3430,7 +3430,3 @@ After completing this project, you will be able to:
 - Build clean console reports.
 
 This project simulates a simple production pipeline tool.
-
-
-
-
