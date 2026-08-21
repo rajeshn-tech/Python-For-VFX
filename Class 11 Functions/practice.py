@@ -536,13 +536,117 @@ Practice
 # print("Total Render Time:", total_render_time)
 
 
-def check_blade(render_time):
-    if render_time > 60:
-        return "Slow"
-    else:
-        return "Normal"
+# =========================================================
+# Topic 07 - Functions with Conditions
+# =========================================================
+
+# print("========== Topic 07 - Functions with Conditions ==========\n")
 
 
-blade_status = check_blade(75)
+# =========================================================
+# Question 1
+# =========================================================
 
-print("Blade Status:", blade_status)
+# def check_priority(priority):
+#     if priority >= 80:
+#         print("High Priority")
+#     else:
+#         print("Normal Priority")
+
+# check_priority(90)
+# check_priority(50)
+
+# print()
+
+
+# =========================================================
+# Question 2
+# =========================================================
+
+# def check_render_time(render_time):
+#     if render_time > 60:
+#         print("Slow Render")
+#     else:
+#         print("Normal Render")
+
+# check_render_time(85)
+# check_render_time(40)
+
+print()
+
+
+# =========================================================
+# Question 3
+# =========================================================
+
+# def check_priority_level(priority):
+#     if priority >= 80:
+#         print("High Priority")
+
+#     elif priority >= 50:
+#         print("Medium Priority")
+
+#     else:
+#         print("Low Priority")
+
+# check_priority_level(90)
+# check_priority_level(60)
+# check_priority_level(30)
+
+# print()
+
+
+# =========================================================
+# Question 4
+# =========================================================
+
+# def check_blade(status):
+#     if status == "Online":
+#         print("Blade Ready")
+#     else:
+#         print("Blade Not Available")
+
+# check_blade("Online")
+# check_blade("Offline")
+
+# print()
+
+
+# =========================================================
+# Question 5 - Condition with return
+# =========================================================
+
+# def get_blade_status(render_time):
+#     if render_time > 60:
+#         return "Slow"
+#     else:
+#         return "Normal"
+
+# blade_status = get_blade_status(75)
+
+# print("Blade Status:", blade_status)
+
+# print()
+
+
+# =========================================================
+# Question 6 - Production Example
+# =========================================================
+
+# def get_render_status(render_time):
+#     if render_time > 120:
+#         return "Very Slow"
+
+#     elif render_time > 60:
+#         return "Slow"
+
+#     else:
+#         return "Normal"
+
+# status_1 = get_render_status(150)
+# status_2 = get_render_status(90)
+# status_3 = get_render_status(40)
+
+# print("Job 1:", status_1)
+# print("Job 2:", status_2)
+# print("Job 3:", status_3)

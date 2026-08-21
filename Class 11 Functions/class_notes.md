@@ -1538,3 +1538,241 @@ return  -> Send the value back
 ```
 
 ---
+
+
+# Topic 7 - Functions with Conditions
+
+## Definition
+
+A Function can contain `if`, `elif`, and `else` conditions.
+
+This allows the Function to make decisions based on the values it receives.
+
+---
+
+## Why Do We Need Conditions Inside Functions?
+
+Functions often need to check data before deciding what to do.
+
+Examples:
+
+- Check Render Priority
+- Check Blade Status
+- Check Job Status
+- Check Render Time
+- Validate Production Data
+
+---
+
+## Example 1 - Function with if and else
+
+```python
+def check_priority(priority):
+    if priority >= 80:
+        print("High Priority")
+    else:
+        print("Normal Priority")
+
+check_priority(90)
+check_priority(50)
+```
+
+### Output
+
+```text
+High Priority
+Normal Priority
+```
+
+### How It Works
+
+```text
+check_priority(90)
+
+priority = 90
+
+90 >= 80
+   ↓
+True
+   ↓
+High Priority
+```
+
+```text
+check_priority(50)
+
+priority = 50
+
+50 >= 80
+   ↓
+False
+   ↓
+Normal Priority
+```
+
+---
+
+## Example 2 - Function with if, elif, and else
+
+```python
+def check_priority(priority):
+    if priority >= 80:
+        print("High Priority")
+
+    elif priority >= 50:
+        print("Medium Priority")
+
+    else:
+        print("Low Priority")
+
+check_priority(90)
+check_priority(60)
+check_priority(30)
+```
+
+### Output
+
+```text
+High Priority
+Medium Priority
+Low Priority
+```
+
+Python checks the conditions from top to bottom.
+
+---
+
+## Example 3 - Function with String Condition
+
+```python
+def check_blade(status):
+    if status == "Online":
+        print("Blade Ready")
+    else:
+        print("Blade Not Available")
+
+check_blade("Online")
+check_blade("Offline")
+```
+
+### Output
+
+```text
+Blade Ready
+Blade Not Available
+```
+
+---
+
+## Function with Condition and return
+
+A Function can also return a value based on a condition.
+
+```python
+def check_blade(render_time):
+    if render_time > 60:
+        return "Slow"
+    else:
+        return "Normal"
+
+blade_status = check_blade(75)
+
+print("Blade Status:", blade_status)
+```
+
+### Output
+
+```text
+Blade Status: Slow
+```
+
+### How It Works
+
+```text
+render_time = 75
+
+75 > 60
+   ↓
+True
+   ↓
+return "Slow"
+   ↓
+blade_status = "Slow"
+```
+
+---
+
+## Production Example
+
+```python
+def get_render_status(render_time):
+    if render_time > 120:
+        return "Very Slow"
+
+    elif render_time > 60:
+        return "Slow"
+
+    else:
+        return "Normal"
+
+status_1 = get_render_status(150)
+status_2 = get_render_status(90)
+status_3 = get_render_status(40)
+
+print("Job 1:", status_1)
+print("Job 2:", status_2)
+print("Job 3:", status_3)
+```
+
+### Output
+
+```text
+Job 1: Very Slow
+Job 2: Slow
+Job 3: Normal
+```
+
+---
+
+## Important Points
+
+- Functions can contain `if`, `elif`, and `else`.
+- Conditions allow Functions to make decisions.
+- Arguments provide values to the Function.
+- Parameters receive those values.
+- Python checks `if` and `elif` conditions from top to bottom.
+- `else` runs when all previous conditions are False.
+- A Function can use `return` inside conditions.
+- When `return` executes, the Function stops immediately.
+
+---
+
+## Summary
+
+```python
+def check_priority(priority):
+    if priority >= 80:
+        return "High"
+
+    elif priority >= 50:
+        return "Medium"
+
+    else:
+        return "Low"
+```
+
+Simple Flow:
+
+```text
+Function Call
+     ↓
+Parameter Receives Value
+     ↓
+Condition Check
+     ↓
+if / elif / else
+     ↓
+Result
+```
+
+---
